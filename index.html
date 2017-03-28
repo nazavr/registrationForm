@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+		
+		<title>Форма реєстрації корпоративного акаунта</title>
+
+		<!-- Bootstrap CSS -->
+    <link href="custom/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Theme CSS -->
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+	</head>
+
+	<body>
+
+		<!-- Main -->
+		<div id="wrapper">
+		  
+			<!-- Hidden Bar -->
+		  <div class="user-icon">
+		  	<span class="glyphicon glyphicon-user"></span>
+		  </div>
+		  <div class="secondname-icon">
+		  	<span class="glyphicon glyphicon-user"></span>
+		  </div>
+			<div class="position-icon">
+				<span class="glyphicon glyphicon-briefcase"></span>
+			</div>
+		  <div class="email-icon">
+		  	<span class="glyphicon glyphicon-envelope"></span>
+		  </div>
+		  <div class="login-icon">
+		  	<span class="glyphicon glyphicon-pencil"></span>
+		  </div>
+		  <div class="pass-icon">
+		  	<span class="glyphicon glyphicon-lock"></span>
+		  </div>
+		  <div class="confpass-icon">
+		  	<span class="glyphicon glyphicon-ok"></span>
+		  </div>
+		  <div class="companyname-icon">
+		  	<span class="glyphicon glyphicon-home"></span>
+		  </div>
+		  <div class="tel-icon">
+		  	<span class="glyphicon glyphicon-earphone"></span>
+		  </div>
+		  <div class="site-icon">
+		  	<span class="glyphicon glyphicon-globe"></span>
+		  </div>
+		  <div class="credit-icon">
+		  	<span class="glyphicon glyphicon-credit-card"></span>
+		  </div>
+		  <div class="credit_time-icon">
+		  	<span class="glyphicon glyphicon-calendar"></span>
+		  </div>
+		  <div class="credit_cvv-icon">
+		  	<span class="glyphicon glyphicon glyphicon-option-horizontal"></span>
+		  </div>
+
+			<!-- Form -->
+			<form name="loginform" class="login-form" action="" method="post">
+
+			    <div class="header">
+						<h1>Форма реєстрації</h1>
+						<span>Заповніть поля для реєстрації акаунта</span>
+			    </div>
+
+			    <div class="content">
+						<input name="username" data-toggle="popover" data-content="Введіть своє імя" type="text" id="username" class="input username" placeholder="Імя" pattern="[A-Za-zА-Яа-яЁё]{1,}" required=""/>
+						<input name="secondname" data-toggle="popover" data-content="Введіть своє прізвище" type="text" id="secondname" class="input secondname" placeholder="Прізвище" pattern="[A-Za-zА-Яа-яЁё]{1,}" required=""/>
+						<input name="position" data-toggle="popover" data-content="Введіть свою посаду" type="text" id="position" class="input position" placeholder="Посада" pattern="[A-Za-zА-Яа-яЁё]{6,}" required=""/>
+						<input name="email" data-toggle="popover" data-content="Введіть свій email" type="email" id="email" class="input email" id="email" placeholder="E-mail" required=""/>
+						<p id="suggestion"></p>
+						<input name="login" data-toggle="popover" data-content="Введіть свій логін" type="text" id="login" class="input login" placeholder="Логін" pattern="[A-Za-zА-Яа-яЁё]{3,}" required=""/>
+						<input name="password" data-toggle="popover" data-content="Введіть свій пароль" type="password" id="pass" class="input pass" id="pass" placeholder="Пароль"/>
+						<input name="confirm_password" type="password" data-toggle="popover" data-content="Підтвердіть свій пароль" id="confpass" class="input confpass" id="confpass" placeholder="Підтвердження пароля"/>
+						<input name="companyname" data-toggle="popover" data-content="Введіть назву компанії" type="text" id="companyname" class="input companyname" placeholder="Назва компанії" pattern="[A-Za-zА-Яа-яЁё]{1,}" required=""/>
+						<input name="tel" data-toggle="popover" data-content="Введіть свій мобільний номер" type="text" id="tel" class="input tel" placeholder="Телефон" required=""/>
+						<input name="site" data-toggle="popover" data-content="Введіть сайт компанії" type="url" id="site" class="input site" placeholder="Сайт" required=""/>
+						<input name="creditcard" data-toggle="popover" data-content="Введіть кредитний номер своєї карти" type="text" id="credit" class="input credit" placeholder="Номер банківської картки" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" required=""/>
+
+						<!--Hidden input -->
+						<input name="creditdate" data-toggle="popover" data-content="Введіть термін дії кредитної карти" type="text" id="creditdate" class="input creditdate" placeholder="Термін дії" pattern="[0-9]{4}" maxlength="4" required=""/>
+						<input name="cvv" data-toggle="popover" data-content="Введіть CVV кредитної карти" type="password" id="cvv" class="input cvv" placeholder="Код безпеки" pattern="[0-9]{3}" maxlength="3" required=""/>
+
+			    </div>
+
+			    <div class="footer">
+						<input id="btn" type="submit" name="submit" value="Реєстрація" class="button" />
+			    </div>
+				
+			</form>
+
+		</div>
+
+
+	
+		<!-- Jquery Script -->
+		<script type="text/javascript" src="custom/jquery/jquery-3.2.0.min.js"></script>
+		
+		<!-- TelValidator Script -->
+		<script type="text/javascript" src="custom/telvalidator/js/jquery.inputmask.js"></script>
+
+			<!--Mailcheck Script -->
+		<script type="text/javascript" src="custom/mailcheck/js/mailcheck.js"></script>
+
+		<!-- Bootstrap JavaScript -->
+    <script src="custom/bootstrap/js/bootstrap.min.js"></script>
+  
+		<!-- JavaScript -->
+		<script type="text/javascript" src="js/script.js"></script>
+		
+	</body>
+</html>

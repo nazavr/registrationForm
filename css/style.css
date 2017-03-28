@@ -1,0 +1,309 @@
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+/* BODY STYLING */
+
+/* RESET */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background: url(../images/bg.png) repeat;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	text-align: left;
+	text-decoration: none;
+}
+
+#wrapper {
+	width: 300px;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -200px;
+}
+
+p {
+	font-size: 12px;
+	text-align: center;
+	margin:0;
+}
+
+div.popover {
+	width: 70%;
+}
+
+
+
+/* LOGIN FORM */
+
+.login-form {
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+	z-index:5;
+	margin-bottom: 100px;
+	
+	background: #f3f3f3;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/*******************
+HEADER
+*******************/
+
+.login-form .header {
+	padding: 10px 30px 20px 30px;
+	text-align: center;
+	background: #d4dedf;
+	border-bottom: 1px solid #fff;
+	
+	box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+	-moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+	-webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+
+}
+
+.login-form .header h1 {
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 28px;
+	line-height:34px;
+	color: #414848;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.login-form .header span {
+	font-size: 12px;
+	line-height: 16px;
+	color: #678889;
+}
+
+/*******************
+CONTENT
+*******************/
+
+.login-form .content {
+	padding: 25px 30px 25px 30px;
+}
+
+/* Input field */
+.login-form .content .input {
+
+	padding: 10px 33px;
+	margin-bottom: 10px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #9d9e9e;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+}
+
+
+.login-form .content .input:required:valid {
+	border: 1px solid #2cb61b;
+}
+
+
+/* Second input field */
+
+.login-form .content .input:hover {
+	background: #dfe9ec;
+	color: #414848;
+}
+
+.login-form .content .input:focus {
+	background: #dfe9ec;
+	color: #414848;
+	
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+}
+
+.user-icon, .secondname-icon, .position-icon,
+.email-icon, .login-icon, .pass-icon, .confpass-icon, 
+.companyname-icon, .tel-icon, .site-icon, .credit-icon,
+.credit_time-icon, .credit_cvv-icon {
+	width: 46px;
+	height: 47px;
+	display: block;
+	position: absolute;
+	left: 0px;
+	padding-right: 1px;
+	z-index: 3;
+	
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+
+.user-icon span, .secondname-icon span, .position-icon span,
+.email-icon span, .login-icon span, .pass-icon span, .confpass-icon span, 
+.companyname-icon span, .tel-icon span, .site-icon span, .credit-icon span,
+.credit_time-icon span, .credit_cvv-icon span {
+	color: #fff;
+	padding-left: 17px;
+  padding-top: 15px;
+}
+
+.creditdate, .cvv {
+	display: none;
+}
+
+.user-icon {
+	top: 128px; 
+	background: rgba(65,72,72,0.5);	
+}
+
+.secondname-icon {
+	top: 180px;
+	background: rgba(65,72,72,0.5);
+}
+
+.position-icon {
+	top: 232px;
+	background: rgba(65,72,72,0.5);
+}
+
+.email-icon {
+	top: 284px; 
+	background: rgba(65,72,72,0.5);	
+}
+
+.login-icon {
+	top: 336px;
+	background: rgba(65,72,72,0.5);
+}
+
+.pass-icon {
+	top: 388px;
+	background: rgba(65,72,72,0.5);
+}
+
+.confpass-icon {
+	top: 440px; 
+	background: rgba(65,72,72,0.5);	
+}
+
+.companyname-icon {
+	top: 492px;
+	background: rgba(65,72,72,0.5);
+}
+
+.tel-icon {
+	top: 544px;
+	background: rgba(65,72,72,0.5);
+}
+
+.site-icon {
+	top: 596px;
+	background: rgba(65,72,72,0.5);
+}
+
+.credit-icon {
+	top: 648px;
+	background: rgba(65,72,72,0.5);
+}
+
+.credit_time-icon {
+	top: 700px;
+	background: rgba(65,72,72,0.5);
+}
+
+.credit_cvv-icon {
+	top: 752px;
+	background: rgba(65,72,72,0.5);
+}
+
+
+
+
+/* Animation */
+.input, .user-icon, .secondname-icon, 
+.position-icon, .email-icon, .login-icon,
+.pass-icon, .confpass-icon, .companyname-icon,
+.tel-icon, .site-icon, .credit-icon, .credit_time-icon,
+.credit_cvv-icon, .button {
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	outline:none;
+}
+
+/* FOOTER */
+
+.login-form .footer {
+	padding: 20px 30px 20px 30px;
+	overflow: auto;
+	
+	background: #d4dedf;
+	border-top: 1px solid #fff;
+	
+	box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+	-moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+	-webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+}
+
+/* Login button */
+.login-form .footer .button {
+	padding: 8px 77px;
+	
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #fff;
+	text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
+	
+	background: #56c2e1;
+	border: 1px solid #46b3d3;
+	border-radius: 5px;
+	cursor: pointer;
+	
+	box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+	-moz-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+	-webkit-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+}
+
+.login-form .footer .button:hover {
+	background: #3f9db8;
+	border: 1px solid rgba(256,256,256,0.75);
+	
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.login-form .footer .button:focus {
+	position: relative;
+	bottom: -1px;
+	
+	background: #56c2e1;
+	
+	box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+	-moz-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+	-webkit-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+}
